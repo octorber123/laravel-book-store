@@ -1,20 +1,20 @@
-## Aston book store
+# Aston book store
 - Website Link: https://larabookstore.herokuapp.com/
 - Admin username: astonadmin@aston.com pass: astonadmin
 - User username: astonuser@aston.com pass: astonuser
 
-I used the Laravel framework to create this book store web application, I have used simple CSS and bootstap styling to keep the website clean and simple to use. This web store allows registered users to place orders for books.
+I have used the Laravel framework to create this book store, web application, I have used CSS and bootstap styling to keep the website clean and simple to use. This web store allows registered users to place orders for books.
 
 
 ## Structure of system:
-This book store can be visited by 3 types of users, unregistered, registered and staff users. Using Authentication gates, low cleareance users cannot visit high clearance views. for axmple a unregistered user will be redirected if try to access an admin view.
+This book store can be visited by 3 types of users, unregistered, registered and staff users. Using Authentication gates, low cleareance users cannot visit high clearance views. for exmple an unregistered user will be redirected if try to access an admin view.
 
-## Features each user can access:
+## Functionality:
 
 ### Unregistered users can…
 - can register as customer
 - can see book list with title, category, price.
-- Can see details of book with extra information like book cover image , stock and publish year
+- Can see details of a book with extra information like book cover , stock available and publish year
 
 ### Registered Users…
 - Can Log in or out
@@ -27,10 +27,10 @@ This book store can be visited by 3 types of users, unregistered, registered and
 - Can place an order for a book
 
 ### Staff users can…
--Log in or out
--Can increase stock quantity of a book
--Can View order and their details
--Can Complete orders
+- Log in or out
+- Can increase stock quantity of a book
+- Can View order and their details
+- Can Complete orders
 
 ## Other functional features:
 - Sensible names for URL
