@@ -22,7 +22,7 @@
 <div class="row justify-content-center">
 <div class="col-md-8 ">
 <div class="card">
-<div class="card-header"><h3>List of Books on sale</h3></div>
+<div class="card-header"><h3>Listss of Books on sale</h3></div>
 <div class="card-body">
 <div class="table-responsive">
 <table class="table table-striped sortable">
