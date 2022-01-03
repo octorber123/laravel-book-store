@@ -68,6 +68,9 @@ book_id is foreign key references id in the book table
 customer_id is foreign key references the id in user id
 
 
+(database picture coming soon) 
+
+
 
 
 
