@@ -42,10 +42,9 @@
                     <ul class="navbar-nav mr-auto">
                       <a href="{{route('books.index')}}" class="nav-link" >Book list</a></td>
                       @guest
-                      <a href="{{route('books.create')}}" class="nav-link" >Add New Book</a></td>
                       @else
                       @if(Gate::allows('isStaff'))
-                      
+                      <a href="{{route('books.create')}}" class="nav-link" >Add New Book</a></td>
                       <a href="{{route('orders.index')}}" class="nav-link" >Order List</a></td>
                       @else
                       <a href="{{route('orders.index')}}" class="nav-link" >Cart</a></td>

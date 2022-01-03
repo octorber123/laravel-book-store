@@ -36,11 +36,11 @@ class BookController extends Controller
      */
     public function create()
     {
-      // if ((Gate::allows('isStaff') && Auth::check()) ) {
-           return view('books.create');
-      // }else {
-      // return redirect()->back();
-      // }
+      if ((Gate::allows('isStaff') && Auth::check()) ) {
+         return view('books.create');
+      }else {
+         return redirect()->back();
+      }
 
     }
 
