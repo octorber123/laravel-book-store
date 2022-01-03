@@ -1,3 +1,87 @@
+## Aston book store
+- Website Link: https://larabookstore.herokuapp.com/
+- Admin username: astonadmin@aston.com pass: astonadmin
+- User username: astonuser@aston.com pass: astonuser
+
+I used the Laravel framework to create this book store web application, I have used simple CSS and bootstap styling to keep the website clean and simple to use. This web store allows registered users to place orders for books.
+
+
+## Structure of system:
+This book store can be visited by 3 types of users, unregistered, registered and staff users. Using Authentication gates, low cleareance users cannot visit high clearance views. for axmple a unregistered user will be redirected if try to access an admin view.
+
+## Features each user can access:
+
+### Unregistered users can…
+- can register as customer
+- can see book list with title, category, price.
+- Can see details of book with extra information like book cover image , stock and publish year
+
+### Registered Users…
+- Can Log in or out
+- can view list of books with basic details
+- can view details of specific book by clicking on details button on the items list.
+- Can check the cart
+- Can add books to cart through book list
+- Can delete a book from cart
+- Can update the quantity of a book in cart
+- Can place an order for a book
+
+### Staff users can…
+-Log in or out
+-Can increase stock quantity of a book
+-Can View order and their details
+-Can Complete orders
+
+## Other functional features:
+- Sensible names for URL
+- Simple and neat webpages
+- Adequate error reporting
+- good site navigation - Pages have links to related pages and home page 
+
+## Security features
+- Authentication is used to divert users to their relevant views, so a public user cannot access
+staff views
+- Passwords are Hashed on the database
+- All inputted requests have been validated and some fields guarded from mass injection
+- Restricted file upload to only images with restricted size
+- Clever stock system, all input is restricted to prevent inserting a value above stock level
+When a book is added to cart while same book already exists in cart, the quantity is
+increased, and a repeated listing is not added.
+In the cart a user can override the stock level.
+- A Mix of query builder and eloquent model methods are used to carry out CRUD functions.
+Query builder was used since loading times are more than 50% faster then eloquent
+methods
+See:
+- Controller methods use gates to authenticate the user and direct them to the correct view,
+this prevents normal users from accessing admin pages by inputting the URL of the page.
+See: (all controller methods that direct to a view use gates)
+
+## Database structure
+*Disclaimer*
+I understand that a pivot table called (book_user) should have been used to store items in
+the cart instead of the orders table(see below), however I learnt this later, and due to
+shortness of time I continued to use the orders table to store cart items. To distinguish
+between orders and cart items I implemented a status field, when it is 0 that row is an item
+of the cart when it is 1 then that row is considered an order.
+order table (many to many relationship):
+book_id is foreign key references id in the book table
+customer_id is foreign key references the id in user id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
