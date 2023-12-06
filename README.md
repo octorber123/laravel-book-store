@@ -58,7 +58,7 @@ See: (all controller methods that direct to a view use gates)
 ## Database structure
 
 *Disclaimer*
-I understand that a pivot table called (book_user) should have been used to store items in
+I understand that a pivot table called (baskets) should have been used to store items in
 the cart instead of the orders table(see below), however I learnt this later, and due to
 shortness of time I continued to use the orders table to store cart items. To distinguish
 between orders and cart items I implemented a status field, when it is 0 that row is an item
