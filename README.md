@@ -1,4 +1,4 @@
-# Aston book store
+# Aston book store (University Project)
 This web application allows all users to view books, registered users to place orders for books and staff to manage books and orders.
 
 - Heroku Website Link: https://larabookstore.herokuapp.com/
